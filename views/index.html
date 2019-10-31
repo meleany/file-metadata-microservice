@@ -1,0 +1,70 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>File Metadata</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+        
+    <!-- import Google fonts and awesome icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">        
+    <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet" type="text/css">        
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">   
+    
+  </head>
+  
+  <body>
+    
+    <div id="container">
+      <h1>File Metadata Microservice</h1>
+      <h3>FreeCodeCamp APIs & Microservices Project</h3>
+      
+      <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="upfile" />
+        <input type="submit" value="Upload"/>
+      </form>
+            
+      <p>
+        The File Metadata app consists of a form that lets the user upload an input file upon submission and see its filesize. In particular:
+      </p>
+      
+      <ul>
+        <li>The user can submit a form that includes a file for upload.</li>
+        <li>The input field of the form file have the attribute "name" set to "upfile".</li>
+        <li>Submission of a file generates a JSON response of the form: <br>
+          <code>{name: file name, type: file type, size: file size in bytes}</code>
+        </li>
+        <li>To handle the file uploading the multer npm package is used (
+          <a href="https://www.npmjs.com/package/multer" target="_blank">https://www.npmjs.com/package/multer</a>).</li>
+      </ul>      
+    </div>
+    
+    <footer>
+      <div id="footer-row1">
+        <a class="button" href="https://www.freecodecamp.com/meleany" target="_blank"> <i class="fa fa-free-code-camp fa-2x fa-fw"></i> </a> 
+        <a class="button" href="https://github.com/meleany" target="_blank"> <i class="fa fa-github-alt fa-2x fa-fw"></i> </a>
+        <a class="button" href="https://codepen.io/meleany" target="_blank"> <i class="fa fa-codepen fa-2x fa-fw"></i> </a>
+        <a class="button" href="https://ymelbart.wordpress.com/" target="_blank"> <i class="fa fa-wordpress fa-2x fa-fw"></i> </a>
+      </div>
+      <div id="footer-row2">
+        Yasmin Melean &copy 2019. All rights reserved.
+      </div>
+    </footer> 
+
+  </body>
+  
+</html>
